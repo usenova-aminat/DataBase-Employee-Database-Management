@@ -43,7 +43,7 @@ public class Employee {
     public double getSalary(){
         return salary;
     }
-    public void setSalary(double Salary){
+    public void setSalary(double salary){
         this.salary = salary;
     }
     public Date getHire_date() {
