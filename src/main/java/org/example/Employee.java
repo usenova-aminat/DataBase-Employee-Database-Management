@@ -16,6 +16,12 @@ public class Employee {
         this.salary = salary;
         this.hire_date = hire_date;
     }
+    public Employee(String name, String position, double salary, Date hire_date) {
+        this.name = name;
+        this.position = position;
+        this.salary = salary;
+        this.hire_date = hire_date;
+    }
     public int getId() {
         return id;
     }

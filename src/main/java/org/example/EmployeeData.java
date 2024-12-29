@@ -7,7 +7,7 @@ import java.util.Date;
 import static javax.management.remote.JMXConnectorFactory.connect;
 
 public class EmployeeData {
-    private static final String URL = "jdbc:postgresql://localhost:5432/employee_db";
+    private static final String URL = "jdbc:postgresql://localhost:5433/employee_db";
     private static final String USER = "postgres";
     private static final String PASSWORD = "123456";
 
