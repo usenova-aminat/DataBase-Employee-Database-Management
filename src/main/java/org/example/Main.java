@@ -33,8 +33,8 @@ public class Main {
             System.out.println("Cannot update - employee not found.");
         }
 
-        
-        System.out.println("\n=== Deleting employee ===");
+
+        System.out.println("\n   Deleting employee    ");
         int deleteId = 1;
         employeeData.deleteEmployee(deleteId);
         System.out.println("Employee with ID " + deleteId + " deleted.");

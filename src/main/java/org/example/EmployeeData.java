@@ -50,27 +50,6 @@ public class EmployeeData {
         return null;
     }
 
-    public List<Employee> getAllEmployees() {
-        List<Employee> employees = new ArrayList<>();
-        String sql = "SELECT * FROM employee";
-        try (Connection conn = connect();
-             Statement stmt = conn.createStatement();
-             ResultSet rs = stmt.executeQuery(sql)) {
-            while (rs.next()) {
-                employees.add(new Employee(
-                        rs.getInt("id"),
-                        rs.getString("name"),
-                        rs.getString("position") ,
-                        rs.getDouble("salary"),
-                        rs.getDate("hire_date")
-                ));
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return employees;
-    }
-
     public void updateEmployee(Employee employee) {
         String sql = "UPDATE employee SET name = ?, position = ?, salary = ?, hire_date = ? WHERE id = ?";
         try (Connection conn = connect();
